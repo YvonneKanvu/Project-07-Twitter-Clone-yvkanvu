@@ -1,9 +1,16 @@
+import profile from '../images/Profile-Photo (1).png';
+import tweetAutentic from '../images/Verified.svg';
+import tweetImage from '../images/tweet-image.png';
+import TweetProfile from '../images/Tweet-Profile-Photo.png';
+import Tweeter from '../images/Tweeter.svg';
+
 const DataSectionTweets = [
     {
-        tweetIcon : "src\images\Profile-Photo (1).png",
+        tweetIcon : profile,
         tweetTitle : "CNN",
-        tweetAutentic : "src\images\Verified.svg",
+        tweetAutentic : tweetAutentic,
         tweetIdentite : "@CNN",
+        tweetPoint : ".",
         tweetDate : "7m",
         tweetInfo : "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
         tweetImage : "",
@@ -14,13 +21,14 @@ const DataSectionTweets = [
     },
     
     {
-        tweetIcon : "src\images\Tweet-Profile-Photo.png",
+        tweetIcon : TweetProfile,
         tweetTitle : "The New York Times",
-        tweetAutentic : "src\images\Verified.svg",
+        tweetAutentic : tweetAutentic,
         tweetIdentite : "@nytimes",
+        tweetPoint : ".",
         tweetDate : "2h",
         tweetInfo : "Gardening boomed during the pandemic. Six Black writers share how has helped them re-establish,and reimagine, a connection to cultivation and the land.",
-        tweetImage : "src\images\tweet-image.png",
+        tweetImage : tweetImage,
         tweetComment : "19",
         tweetDiscution : "48",
         tweetLike : "482",
@@ -28,10 +36,11 @@ const DataSectionTweets = [
     },
 
     {
-        tweetIcon : "src\images\Tweeter.svg",
+        tweetIcon : Tweeter,
         tweetTitle : "Twitter",
-        tweetAutentic : "src\images\Verified.svg",
+        tweetAutentic : tweetAutentic,
         tweetIdentite : "@Twitter",
+        tweetPoint : ".",
         tweetDate : "oct 4",
         tweetInfo : "BIG NEWS lol jk stillTwitter.",
         tweetImage : "",
@@ -43,10 +52,11 @@ const DataSectionTweets = [
 
     
     {
-        tweetIcon : "src\images\Tweeter.svg",
+        tweetIcon : Tweeter,
         tweetTitle : "Twitter",
-        tweetAutentic : "src\images\Verified.svg",
+        tweetAutentic : tweetAutentic,
         tweetIdentite : "@Twitter",
+        tweetPoint : ".",
         tweetDate : "oct 4",
         tweetInfo : "hello literally everyone.",
         tweetImage : "",
@@ -57,10 +67,11 @@ const DataSectionTweets = [
     },
 
     {
-        tweetIcon : "src\images\Tweeter.svg",
+        tweetIcon : Tweeter,
         tweetTitle : "Twitter",
-        tweetAutentic : "src\images\Verified.svg",
+        tweetAutentic : tweetAutentic,
         tweetIdentite : "@Twitter",
+        tweetPoint : ".",
         tweetDate : "oct 4",
         tweetInfo : "hello literally everyone.",
         tweetImage : "",
