@@ -1,4 +1,5 @@
 import DataSectionTweets from "../data/dataSectionTweets";
+
 const Tweets = () => {
     return ( 
         <>

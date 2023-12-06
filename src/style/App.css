@@ -193,3 +193,76 @@ body{
     justify-content: center;
     gap: 20px;
 }
+/* /mes codes css */
+.sidebar {
+    flex: 0 0 100px;
+    font-family: 'Inter',sans-serif;
+}
+.trends {
+    flex: 0 0 100px;
+    font-family: 'Inter',sans-serif;
+}
+.tweeter1 {
+    flex: 0 0 70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+} 
+.home1 {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.explore {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.notifications {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.messages {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.bookMarks {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.lists {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.profile {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.more {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+} 
+.buttonTweet {
+    text-transform: capitalize;
+    padding: .7rem 3.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+}
+.bradley {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    gap: 1;
+}
+.bradleyO {
+    direction: horizontal;
+}
