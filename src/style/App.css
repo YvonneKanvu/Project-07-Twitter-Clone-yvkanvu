@@ -185,6 +185,7 @@ body{
     width: 1rem;
     height: auto;
     color: #2F3336;
+    
 }
 
 .tweet-action{
@@ -197,6 +198,9 @@ body{
 .sidebar {
     flex: 0 0 100px;
     font-family: 'Inter',sans-serif;
+    position: sticky;
+    height: 100%;
+    top: 0;
 }
 .trends {
     flex: 0 0 100px;
@@ -261,8 +265,11 @@ body{
     position: fixed;
     bottom: 0;
     display: flex;
-    gap: 1;
+    gap: 2px;
+    
 }
-.bradleyO {
-    direction: horizontal;
+.bradleyO span {
+    display: block;
+    margin-left: 8px;
+    margin-right: 20px;
 }
