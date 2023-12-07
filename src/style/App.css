@@ -196,15 +196,11 @@ body{
 }
 /* /mes codes css */
 .sidebar {
-    flex: 0 0 100px;
+    flex: 0 0 14.20%;
     font-family: 'Inter',sans-serif;
     position: sticky;
     height: 100%;
     top: 0;
-}
-.trends {
-    flex: 0 0 100px;
-    font-family: 'Inter',sans-serif;
 }
 .tweeter1 {
     flex: 0 0 70px;
@@ -272,4 +268,61 @@ body{
     display: block;
     margin-left: 8px;
     margin-right: 20px;
+}
+.trends {
+    flex: 0 0 17.16%;
+    font-family: 'Inter',sans-serif;
+}
+.search { 
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    border-radius: 8rem;
+    background-color: #272d33;
+    color: rgb(145, 131, 131);
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    position: relative;
+    
+} 
+.iconSearch {
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    left: 5px;   
+}
+.inputSearch {
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    left: 50px;
+    height: 15px;
+    background-color: #272d33;
+    border: none;
+}
+.trendsFor {
+    height: 35rem;
+    width: 15rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #272d33;
+    color: rgb(145, 131, 131);
+    font-size: 1rem;
+    top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    position: relative;  
+}
+h5{
+    color: white;
+    position: absolute;
+    top: 10px;
+    margin-left: 5px;  
+}
+.settingImage{
+    position: absolute;
+    top: 10px;
+    margin-left: 200px;
 }
