@@ -310,19 +310,27 @@ body{
     background-color: #272d33;
     color: rgb(145, 131, 131);
     font-size: 1rem;
-    top: 10px;
-    margin-left: 1px;
-    margin-right: 1px;
-    position: relative;  
+    top: 20px;
+    /* margin-left: 1px;
+    margin-right: 1px; */
+    margin-top: 10px;
+    padding: 10px;
+     
 }
-h5{
+.setting{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.turkeyTrends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+h5 {
     color: white;
-    position: absolute;
-    top: 10px;
-    margin-left: 5px;  
 }
-.settingImage{
-    position: absolute;
-    top: 10px;
-    margin-left: 200px;
-}
+
+
+
