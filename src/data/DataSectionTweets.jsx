@@ -1,7 +1,7 @@
 import profile from '../images/Profile-Photo (1).png';
 import tweetAutentic from '../images/Verified.svg';
 import tweetImage from '../images/tweet-image.png';
-import TweetProfile from '../images/Tweet-Profile-Photo.png';
+import TweetProfile from '../images/tweet-profile-photo.png';
 import Tweeter from '../images/Tweeter.svg';
 
 const DataSectionTweets = [
