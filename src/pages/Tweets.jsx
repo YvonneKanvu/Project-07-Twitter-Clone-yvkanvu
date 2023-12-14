@@ -1,4 +1,4 @@
-import DataSectionTweets from "../data/dataSectionTweets";
+import DataSectionTweets from "../data/DataSectionTweets";
 const Tweets = () => {
     return ( 
         <>
