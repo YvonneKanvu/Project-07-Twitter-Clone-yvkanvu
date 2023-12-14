@@ -20,10 +20,9 @@ const Tweets = () => {
                     <div className="tweet-text">
                     {tweet.tweetInfo}
                     </div>
-                    <div className="tweet-image">
+                    {tweet.tweetImage && <div className="tweet-image">
                         <img src={tweet.tweetImage} alt="" />
-                        
-                    </div>
+                    </div>}
                 </div>
                 <div className="tweet-actions">
                     <img className="tweet-action" src="src/images/Reply.svg" alt=""/>
