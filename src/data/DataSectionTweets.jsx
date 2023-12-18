@@ -17,9 +17,8 @@ const DataSectionTweets = [
         tweetComment : "57",
         tweetDiscution : "144",
         tweetLike : "184",
-
     },
-    
+
     {
         tweetIcon : TweetProfile,
         tweetTitle : "The New York Times",
@@ -32,7 +31,6 @@ const DataSectionTweets = [
         tweetComment : "19",
         tweetDiscution : "48",
         tweetLike : "482",
-
     },
 
     {
@@ -47,7 +45,6 @@ const DataSectionTweets = [
         tweetComment : "118.7k",
         tweetDiscution : "785.4k",
         tweetLike : "3.3k",
-
     },
 
     
@@ -63,7 +60,6 @@ const DataSectionTweets = [
         tweetComment : "118.7k",
         tweetDiscution : "785.4k",
         tweetLike : "3.3k",
-
     },
 
     {
@@ -78,9 +74,6 @@ const DataSectionTweets = [
         tweetComment : "",
         tweetDiscution : "",
         tweetLike : "",
-
-    },
-    
-
+    },   
 ]
 export default DataSectionTweets;

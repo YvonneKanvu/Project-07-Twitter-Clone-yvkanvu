@@ -3,7 +3,6 @@ const Tweets = () => {
     return ( 
         <>
         {DataSectionTweets.map((tweet, index)=>(
-
         <div className="tweet" key={index}>
             <div className="tweet-avatar">
                 <img src={tweet.tweetIcon} alt=""/>
@@ -32,16 +31,11 @@ const Tweets = () => {
                      <img className="tweet-action" src="src\images\React.svg" alt=""/>
                       <span>184</span>
                      <img className="tweet-action" src="src\images\Tweet-Replies.svg" alt=""/>
-                      
-
-                      
                 </div>
             </div>
         </div>               
-
         ))}
         </> 
     );
-}
- 
+} 
 export default Tweets;
