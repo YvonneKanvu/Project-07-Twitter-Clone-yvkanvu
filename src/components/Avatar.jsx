@@ -1,7 +1,7 @@
 
 const Avatar = () => {
     return (  
-        <img src="src\images\profile-photo.png" alt="" className="avatar" />
+        <img className="avatar" src="src\images\profile-photo.png" alt=""  />
     );
 } 
 export default Avatar;
