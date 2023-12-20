@@ -6,8 +6,6 @@ function Trends() {
       <main className='trends' >
         <SearchTrends/>
         <TrendsFor/>
-        
-      
       </main>
     );
   }

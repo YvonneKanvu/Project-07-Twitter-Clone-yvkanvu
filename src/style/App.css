@@ -321,16 +321,29 @@ body{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ /* margin-bottom: 20px; */
 }
-.turkeyTrends {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
+.turkeyTrends {  
+    /* justify-content: space-between;   */
+    align-items: center; 
+    margin-top: 50px;
+     
+ } 
 h5 {
     color: white;
 }
+.turkeyDetail{
+    justify-content: space-between;
+    display: flex;
+}
+.buttonShow{
+    color: #1D9BF0;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    background-color: #272d33;
+    border: none;
+}
+
 
 
 
