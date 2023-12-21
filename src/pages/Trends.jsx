@@ -1,11 +1,15 @@
 import React from 'react';
-import SearchTrends from '../components/SearchTrends';
+import TrendsSearch from '../components/TrendsSearch';
 import TrendsFor from '../components/TrendsFor';
+import TrendsFollow from '../components/TrendsFollow';
+import TrendsFooter from '../components/TrendsFooter';
 function Trends() {
     return (
       <main className='trends' >
-        <SearchTrends/>
+        <TrendsSearch/>
         <TrendsFor/>
+        <TrendsFollow/>
+        <TrendsFooter/>
       </main>
     );
   }

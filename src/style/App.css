@@ -275,7 +275,7 @@ body{
 }
 .search { 
     height: 3rem;
-    width: 15rem;
+    width: 17rem;
     border: none;
     border-radius: 8rem;
     background-color: #272d33;
@@ -304,13 +304,12 @@ body{
 }
 .trendsFor {
     height: 35rem;
-    width: 15rem;
+    width: 17rem;
     border: none;
     border-radius: 1rem;
     background-color: #272d33;
-    color: rgb(145, 131, 131);
-    font-size: 1rem;
-    top: 20px;
+    font-size: 0.7rem;
+    /* top: 20px; */
     /* margin-left: 1px;
     margin-right: 1px; */
     margin-top: 10px;
@@ -326,11 +325,11 @@ body{
 .turkeyTrends {  
     /* justify-content: space-between;   */
     align-items: center; 
-    margin-top: 50px;
-     
+    margin-top: 50px;  
  } 
 h5 {
     color: white;
+    font-size: 1rem;
 }
 .turkeyDetail{
     justify-content: space-between;
@@ -342,6 +341,73 @@ h5 {
     margin-bottom: 15px;
     background-color: #272d33;
     border: none;
+}
+
+.trendsFollow{
+    height: 30rem;
+    width: 17rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #272d33;
+    font-size: 0.7rem; 
+    margin-top: 10px;
+    padding: 10px;
+}
+.followNewyork{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px; 
+}
+.newYorkCertified{
+    display: flex;
+}
+.newYorkButton{
+    border-radius: 2rem;
+    height: 30px;
+    width: 65px;
+}
+span{ 
+    color: #6E767D;
+} 
+p{
+    color: #D9D9D9;
+}
+.followCNN{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 70px; 
+}
+.cnnCertified{
+    display: flex;
+}
+.followCNNDetail{
+    margin-left: 6px;
+    margin-right: 87px;
+}
+.cnnButton{
+   border-radius: 2rem;
+   width: 65px;
+   height: 30px;
+}
+.twitterCertified{
+    display: flex;
+}
+.twitterButton{
+    border-radius: 2rem;
+    width: 65px;
+    height: 30px;
+}
+.followtwitterDetail{
+    margin-right: 87px;
+}
+.followTwitter{
+    margin-top: 70px;
+    display: flex;
+}
+.trendsFooter{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #2F3336;
 }
 
 

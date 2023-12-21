@@ -22,8 +22,7 @@ const Tweets = () => {
                     {tweet.tweetInfo}
                     </div>
                     <div className="tweet-image">
-                        <img src={tweet.tweetImage} alt="" />
-                        
+                        <img src={tweet.tweetImage} alt="" />    
                     </div>
                 </div>
                 <div className="tweet-actions">
@@ -33,14 +32,10 @@ const Tweets = () => {
                       <span>144</span>
                      <img className="tweet-action" src="src\images\React.svg" alt=""/>
                       <span>184</span>
-                     <img className="tweet-action" src="src\images\Tweet-Replies.svg" alt=""/>
-                      
-
-                      
+                     <img className="tweet-action" src="src\images\Tweet-Replies.svg" alt=""/>      
                 </div>
             </div>
         </div>               
-
         ))}
         </> 
     );
