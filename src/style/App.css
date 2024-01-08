@@ -409,6 +409,18 @@ p{
     margin-top: 10px;
     color: #2F3336;
 }
+.monProfile{
+    /* padding: 1.5rem 1rem;  */
+    background-color: #1D9BF0;
+    border-bottom: 1px solid #73899f;
+    height: 13rem;
+    position: relative;
+}
+.avatarProfil{
+    display: flex;
+    justify-content: flex-start;
+
+}
 
 
 

@@ -6,7 +6,6 @@ const Header = () => {
         <div className="header">
             <PageTitle/>
             <TopTweets/>
-
         </div>
      );
 }
