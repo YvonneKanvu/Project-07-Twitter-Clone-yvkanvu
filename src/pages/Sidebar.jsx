@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route,Link } from "react-router-dom";
+
 import React from 'react';
 import TweeterTweet from '../components/TweeterTweet';
 import HomeTweet from '../components/HomeTweet';
@@ -11,12 +11,12 @@ import Profile from '../components/Profile';
 import More from '../components/More';
 import ButtonTweet from'../components/ButtonTweet';
 import Bradley from '../components/Bradley';
+import ProfilTweet from "./PageProfil";
+import Home from "./home";
 function Sidebar() {
     return (
-     <BrowserRouter>
       <main className='sidebar' >
         <TweeterTweet/>
-        <Link to="/">
         <HomeTweet/>
         <ExploreTweet/>
         <Notifications/>
@@ -27,10 +27,9 @@ function Sidebar() {
         <More/>
         <ButtonTweet/>
         <Bradley/>
-        </Link>
       </main>
-      </BrowserRouter> 
+      
     );
   }
-  
+
   export default Sidebar;
