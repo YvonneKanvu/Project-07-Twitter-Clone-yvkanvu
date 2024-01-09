@@ -1,7 +1,6 @@
 const PageTitle = () => {
     return ( 
-        <h1 className="Page-title">Home</h1>
-        
+        <h1 className="Page-title">Home</h1>      
      );
 }
  

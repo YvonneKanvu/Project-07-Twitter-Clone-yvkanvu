@@ -24,13 +24,21 @@ const Tweets = () => {
                     </div>}
                 </div>
                 <div className="tweet-actions">
-                    <img className="tweet-action" src="src/images/Reply.svg" alt=""/>
+                    <div className="tweet-action">
+                      <img src="src/images/Reply.svg" alt=""/>
                       <span>57</span>
-                     <img className="tweet-action" src="src\images\Retweet.svg" alt=""/>
+                    </div>
+                    <div className="tweet-action">
+                      <img src="src\images\Retweet.svg" alt=""/>
                       <span>144</span>
-                     <img className="tweet-action" src="src\images\React.svg" alt=""/>
+                    </div>
+                    <div className="tweet-action">
+                      <img src="src\images\React.svg" alt=""/>
                       <span>184</span>
-                     <img className="tweet-action" src="src\images\Tweet-Replies.svg" alt=""/>
+                    </div>
+                    <div className="tweet-action">
+                    <img src="src\images\Tweet-Replies.svg" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>               
