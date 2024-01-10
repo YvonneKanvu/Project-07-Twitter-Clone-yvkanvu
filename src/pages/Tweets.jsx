@@ -1,4 +1,4 @@
-import DataSectionTweets from "../data/DataSectionTweets";
+import DataSectionTweets from "../data/dataSectionTweets";
 const Tweets = () => {
     return ( 
         <>
@@ -26,15 +26,15 @@ const Tweets = () => {
                 <div className="tweet-actions">
                     <div className="tweet-action">
                       <img src="src/images/Reply.svg" alt=""/>
-                      <span>57</span>
+                      <span>{tweet.tweetComment}</span>
                     </div>
                     <div className="tweet-action">
                       <img src="src\images\Retweet.svg" alt=""/>
-                      <span>144</span>
+                      <span>{tweet.tweetDiscution}</span>
                     </div>
                     <div className="tweet-action">
                       <img src="src\images\React.svg" alt=""/>
-                      <span>184</span>
+                      <span>{tweet.tweetLike}</span>
                     </div>
                     <div className="tweet-action">
                     <img src="src\images\Tweet-Replies.svg" alt=""/>
