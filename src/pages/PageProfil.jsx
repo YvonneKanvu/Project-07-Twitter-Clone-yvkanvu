@@ -4,14 +4,14 @@ import Layout from '../components/layout';
 import Sidebar from './Sidebar';
 import Trends from './Trends';
 import ProfileTwitter from '../components/ProfileTwitter';
-function ProfilTweet() {
-    return ( 
-        <Layout>
+function PageProfil() {
+    return (
+        <div className='pageProfil'> 
         <Sidebar/>
         <ProfileTwitter/>
         <Trends/>
-        </Layout>
+        </div>
      );
 }
 
-export default ProfilTweet;
+export default PageProfil;

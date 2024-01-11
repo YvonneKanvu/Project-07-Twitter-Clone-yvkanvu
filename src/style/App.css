@@ -201,6 +201,7 @@ body{
     position: sticky;
     height: 100%;
     top: 0;
+    list-style: none;
 }
 .tweeter1 {
     flex: 0 0 70px;
@@ -212,11 +213,13 @@ body{
     display: flex;
     gap: 3rem;
     margin-bottom: 20px;
+
 }
 .explore {
     display: flex;
     gap: 3rem;
     margin-bottom: 20px;
+    
 }
 .notifications {
     display: flex;
@@ -421,6 +424,7 @@ p{
     justify-content: flex-start;
 
 }
+
 
 
 

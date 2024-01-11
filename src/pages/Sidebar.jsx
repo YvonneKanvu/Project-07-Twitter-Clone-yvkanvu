@@ -11,22 +11,24 @@ import Profile from '../components/Profile';
 import More from '../components/More';
 import ButtonTweet from'../components/ButtonTweet';
 import Bradley from '../components/Bradley';
-import ProfilTweet from "./PageProfil";
-import Home from "./home";
+// import ProfilTweet from "./PageProfil";
+// import Home from "./home";
 function Sidebar() {
     return (
       <main className='sidebar' >
-        <TweeterTweet/>
-        <HomeTweet/>
-        <ExploreTweet/>
-        <Notifications/>
-        <Messages/>
-        <Bookmarks/>
-        <Lists/>
-        <Profile/>
-        <More/>
-        <ButtonTweet/>
-        <Bradley/>
+        <ul>
+        <li><TweeterTweet/></li>
+        <li><HomeTweet/></li>
+        <li><ExploreTweet/></li>
+        <li><Notifications/></li>
+        <li><Messages/></li>
+        <li><Bookmarks/></li>
+        <li><Lists/></li>
+        <li><Profile/></li>
+        <li><More/></li>
+        <li><ButtonTweet/></li>
+        <li><Bradley/></li>
+        </ul>
       </main>
       
     );

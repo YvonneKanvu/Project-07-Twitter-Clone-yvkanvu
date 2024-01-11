@@ -1,16 +1,19 @@
-// import { Link } from "react-router-dom";
-// import Profile from "./components/Profile";
+// import { NavLink } from 'react-router-dom';
+// import Profile from './components/Profile';
+// import PageProfil from './pages/PageProfil';
+// import Home from './pages/home';
+// import HomeTweet from './components/HomeTweet';
 // function NavBar() {
     // return ( 
-        //  <nav>
+        // <nav>
             // <ul>
-                //  <li> <Link to="/">Home</Link></li>
-                //  <li><Link to="/HomeTweet">HomeTweet</Link></li>
-                // <li><Link to="/Profile"> <Profile/> </Link></li>
-                //  <li><Link to="/ProfilTweet">ProfilTweet</Link></li>
-            // </ul>
-        //  </nav>
-    //   );
+                //  <NavLink to='/'>Home</NavLink>
+                //  <NavLink to='/homeTweet'>HomeTweet</NavLink>
+                //  <NavLink to='/profile'>Profile</NavLink>
+                //  <NavLink to='/pageProfil'>PageProfil</NavLink>
+        //    </ul>
+        // </nav>
+    //  );
 // }
 
 // export default NavBar;
