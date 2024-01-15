@@ -1,16 +1,30 @@
 import { useState } from "react";
+import { Icon } from '@iconify/react';
 
 function Tweet({tweet}) {
-    const [colors, setColors] = useState('');
+    const [colors, setColors] = useState('',0);
     const [colors2, setColors2] = useState('');
     const [colors3, setColors3] = useState('');
-
-
-
     const handleClic1 = () => { setColors('#0000ff') }
     const handleClic2 = () => { setColors2('#00ff00') }
     const handleClic3 = () => { setColors3('#ff0000') }
+    const [comment, setComment] = useState(0)
 
+    const handleClick = ()=>{
+    if (comment === 0){
+    setComment ( comment + 1)
+    }else{
+      setComment(comment - 1)
+    };
+    const handleClic1 = () => {
+        handleClick();
+        setColors("#0000ff");
+      };
+    
+    // handleClic1
+    // handleClic2
+    // handleClic3
+}
 
     return <div className="tweet">
 
@@ -34,16 +48,19 @@ function Tweet({tweet}) {
                 </div>
             </div>
             <div className="tweet-actions">
-                <div className="tweet-action" onClick={handleClic1} style={{ color: colors }}>
-                    <img src="src/images/Reply.svg" alt="" />
+                <div className="tweet-action" onClick={handleClic1}  style={{ color: colors }}>
+                <Icon icon="basil:comment-solid" style={{ color: colors }}/>
+                    {/* <img src="src/images/Reply.svg" alt="" /> */}
                     {tweet.tweetComment}
                 </div>
                 <div className="tweet-action" onClick={handleClic2} style={{ color: colors2 }}>
-                    <img src="src\images\Retweet.svg" alt="" />
+                <Icon icon="ei:retweet" style={{ color: colors2 }} />
+                    {/* <img src="src\images\Retweet.svg" alt="" /> */}
                     {tweet.tweetDiscution}
                 </div>
                 <div className="tweet-action" onClick={handleClic3} style={{ color: colors3 }}>
-                    <img src="src\images\React.svg" alt="" />
+                <Icon icon="icon-park-solid:like" style={{ color: colors3 }} />
+                    {/* <img src="src\images\React.svg" alt="" /> */}
                     {tweet.tweetLike}
                 </div>
                 <div className="tweet-action">

@@ -193,7 +193,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
+    }
+
 /* /mes codes css */
 .sidebar {
     flex: 0 0 14.20%;
