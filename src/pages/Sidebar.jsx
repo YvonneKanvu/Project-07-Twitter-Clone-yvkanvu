@@ -1,4 +1,5 @@
-
+import iconProfil from '../images/Profile.svg';
+import iconHome from '../images/Home-Fill.svg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import TweeterTweet from '../components/TweeterTweet';
@@ -8,7 +9,7 @@ import { Link } from 'react-router-dom';
 // import Messages from '../components/Messages';
 // import Bookmarks from '../components/Bookmarks';
 // import Lists from '../components/Lists';
-// import Profile from '../components/Profile';
+// import Profile from '../components/Profile';;
 // import More from '../components/More';
 // import ButtonTweet from'../components/ButtonTweet';
 // import Bradley from '../components/Bradley';
@@ -19,13 +20,13 @@ function Sidebar() {
       <nav className='sidebar' >
         <ul>
         <li>TweeterTweet</li>
-        <Link to="/"><li><img src='src\images\Home-Fill.svg'/>Home</li></Link>
+        <Link to="/"><li><img src={iconHome}/>Home</li></Link>
         <li>ExploreTweet</li>
         <li>Notifications</li>
         <li>Messages</li>
         <li>Bookmarks</li>
         <li>Lists</li>
-       <Link to={"/username"}><li><img src='src\images\Profile.svg'/>Profile</li></Link>
+       <Link to={"/username"}><li><img src={iconProfil}/>Profile</li></Link>
         <li>More</li>
         <li>ButtonTweet</li>
         <li>Bradley</li>

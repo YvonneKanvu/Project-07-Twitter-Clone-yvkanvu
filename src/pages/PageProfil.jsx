@@ -3,7 +3,8 @@ function PageProfil() {
     return (
         <> 
         <main className="profile">
-        <h1>hello</h1>
+        {/* <ProfileList/> */}
+        <h1>Hello World</h1>
         </main>
         </>
      );
