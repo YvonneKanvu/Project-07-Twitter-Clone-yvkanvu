@@ -427,14 +427,28 @@ p{
 
 }
 
-.commentaire :hover{
-    color: #0000ff;
-}
+
 .discution :hover{
     color: #00ff00;
+    background-color: #00ff00;
+    
 }
 .aime :hover{
     color: #ff0000;
+}
+.value2 :hover{
+    color: #00ff00;
+}
+
+.commentaire .coment{
+    padding: 8px;
+    border-radius: 50%;
+}
+.commentaire:hover .coment{
+    background-color: #0000ff2f;
+}
+.commentaire:hover span{
+    color: #0000ff;
 }
 
 
