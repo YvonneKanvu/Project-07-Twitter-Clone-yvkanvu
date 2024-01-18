@@ -21,9 +21,6 @@ function Tweet({tweet}) {
         setColors("#0000ff");
       };
     
-    // handleClic1
-    // handleClic2
-    // handleClic3
 }
 
     return <div className="tweet">
@@ -47,18 +44,19 @@ function Tweet({tweet}) {
                     <img src={tweet.tweetImage} alt="" />
                 </div>
             </div>
+        
             <div className="tweet-actions">
-                <div className="tweet-action" onClick={handleClic1}  style={{ color: colors }}>
-                <Icon icon="basil:comment-solid" style={{ color: colors }}/>
-                    {/* <img src="src/images/Reply.svg" alt="" /> */}
-                    {tweet.tweetComment}
-                </div>
-                <div className="tweet-action" onClick={handleClic2} style={{ color: colors2 }}>
+                    <div className="tweet-action commentaire " onClick={handleClic1}   style={{ color: colors }}>
+                    <Icon icon="basil:comment-solid" style={{ color: colors }}/>
+                        {/* <img src="src/images/Reply.svg" alt="" /> */}
+                        {tweet.tweetComment}
+                    </div>
+                <div className="tweet-action discution" onClick={handleClic2} style={{ color: colors2 }}>
                 <Icon icon="ei:retweet" style={{ color: colors2 }} />
                     {/* <img src="src\images\Retweet.svg" alt="" /> */}
                     {tweet.tweetDiscution}
                 </div>
-                <div className="tweet-action" onClick={handleClic3} style={{ color: colors3 }}>
+                <div className="tweet-action aime" onClick={handleClic3} style={{ color: colors3 }}>
                 <Icon icon="icon-park-solid:like" style={{ color: colors3 }} />
                     {/* <img src="src\images\React.svg" alt="" /> */}
                     {tweet.tweetLike}

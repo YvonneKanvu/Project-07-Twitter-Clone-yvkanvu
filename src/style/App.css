@@ -193,6 +193,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+
     }
 
 /* /mes codes css */
@@ -424,6 +425,16 @@ p{
     display: flex;
     justify-content: flex-start;
 
+}
+
+.commentaire :hover{
+    color: #0000ff;
+}
+.discution :hover{
+    color: #00ff00;
+}
+.aime :hover{
+    color: #ff0000;
 }
 
 
