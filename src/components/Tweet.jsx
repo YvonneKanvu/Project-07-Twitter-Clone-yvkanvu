@@ -1,31 +1,37 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import DataSectionTweets from "../data/dataSectionTweets";
+
 
 export default function Tweet({ tweet }) {
-  const [colors, setColors] = useState("", 0);
+  const [colors, setColors] = useState("");
   const [colors2, setColors2] = useState("");
   const [colors3, setColors3] = useState("");
+  const [count, setCount] = useState(2)
+  const [verified,setverified]= useState(false)
+
   const handleClic1 = () => {
     setColors("#0000ff");
+    if (verified == true){
+      setCount (count - 1);
+      }else{
+        setCount(count + 1);
+      };
+      setverified(!verified);
   };
   const handleClic2 = () => {
     setColors2("#00ff00");
+    // if (verified == true){
+    //   setCount (count - 1);
+    //   }else{
+    //     setCount(count + 1);
+    //   };
+    //   setverified(!verified);
   };
+  };
+
   const handleClic3 = () => {
     setColors3("#ff0000");
-  };
-  const [comment, setComment] = useState(0);
-
-  const handleClick = () => {
-    if (comment === 0) {
-      setComment(comment + 1);
-    } else {
-      setComment(comment - 1);
-    }
-    const handleClic1 = () => {
-      handleClick();
-      setColors("#0000ff");
-    };
   };
 
   return (
@@ -60,25 +66,28 @@ export default function Tweet({ tweet }) {
               <Icon icon="basil:comment-solid" style={{ color: colors }} />
             </span>
             {/* <img src="src/images/Reply.svg" alt="" /> */}
-            <span>{tweet.tweetComment}</span>
+            <span>{count}</span>
           </div>
           <div
             className="tweet-action discution"
             onClick={handleClic2}
             style={{ color: colors2 }}
           >
+            <span className="discut">
             <Icon icon="ei:retweet" style={{ color: colors2 }} />
-            {/* <img src="src\images\Retweet.svg" alt="" /> */}
-            {tweet.tweetDiscution} 
+            </span>
+            <span>{count}</span> 
           </div>
           <div
             className="tweet-action aime"
             onClick={handleClic3}
             style={{ color: colors3 }}
           >
+            <span className="like">
             <Icon icon="icon-park-solid:like" style={{ color: colors3 }} />
+            </span>
             {/* <img src="src\images\React.svg" alt="" /> */}
-            {tweet.tweetLike}
+           <span> {count}</span>
           </div>
           <div className="tweet-action">
             <img src="src\images\Tweet-Replies.svg" alt="" />
