@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import DataSectionTweets from "../data/dataSectionTweets";
-
 
 export default function Tweet({ tweet }) {
   const [colors, setColors] = useState("");
   const [colors2, setColors2] = useState("");
   const [colors3, setColors3] = useState("");
   const [count, setCount] = useState(2)
+  const [countRetweet, setCountRetweet] = useState(77)
+  const [countLike, setCountLike] = useState(45)
   const [verified,setverified]= useState(false)
 
   const handleClic1 = () => {
@@ -21,17 +21,22 @@ export default function Tweet({ tweet }) {
   };
   const handleClic2 = () => {
     setColors2("#00ff00");
-    // if (verified == true){
-    //   setCount (count - 1);
-    //   }else{
-    //     setCount(count + 1);
-    //   };
-    //   setverified(!verified);
-  };
-  };
+    if (verified == true){
+     setCountRetweet (countRetweet - 1);
+    }else{
+       setCountRetweet(countRetweet + 1);
+     };
+      setverified(!verified);
+   };
 
   const handleClic3 = () => {
     setColors3("#ff0000");
+    if (verified == true){
+      setCountLike (countLike - 1);
+     }else{
+        setCountLike(countLike + 1);
+      };
+       setverified(!verified);
   };
 
   return (
@@ -76,7 +81,7 @@ export default function Tweet({ tweet }) {
             <span className="discut">
             <Icon icon="ei:retweet" style={{ color: colors2 }} />
             </span>
-            <span>{count}</span> 
+            <span>{countRetweet}</span> 
           </div>
           <div
             className="tweet-action aime"
@@ -87,7 +92,7 @@ export default function Tweet({ tweet }) {
             <Icon icon="icon-park-solid:like" style={{ color: colors3 }} />
             </span>
             {/* <img src="src\images\React.svg" alt="" /> */}
-           <span> {count}</span>
+           <span> {countLike}</span>
           </div>
           <div className="tweet-action">
             <img src="src\images\Tweet-Replies.svg" alt="" />
