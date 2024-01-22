@@ -19,18 +19,31 @@ function Sidebar() {
     return (
       <nav className='sidebar' >
         <ul>
-        <li>TweeterTweet</li>
-        <Link to="/"><li><img src={iconHome}/>Home</li></Link>
-        <li>ExploreTweet</li>
-        <li>Notifications</li>
-        <li>Messages</li>
-        <li>Bookmarks</li>
-        <li>Lists</li>
-       <Link to={"/username"}><li><img src={iconProfil}/>Profile</li></Link>
-        <li>More</li>
-        <li>ButtonTweet</li>
-        <li>Bradley</li>
+        <li><img src="src\images\Logo.svg" alt=""/></li>
+        <Link className="homeTweeter" to="/"><li><img src={iconHome}/>Home</li></Link>
+        <li><img src="src\images\Explore.svg" alt=""/>
+Explore</li>
+        <li><img src="src\images\Notifications.svg" alt=""/>
+Notifications</li>
+        <li><img src="src\images\Messages.svg" alt=""/>
+Messages</li>
+        <li><img src="src\images\Bookmarks.svg" alt=""/>
+Bookmarks</li>
+        <li><img src="src\images\Lists (1).svg" alt=""/>
+Lists</li>
+       <Link className="profileTweeter"to={"/username"}><li><img src={iconProfil}/>Profile</li></Link>
+        <li><img src="src\images\More.svg" alt=""/>
+More</li>
+        <li><button className='buttonTweeter'>Tweet</button>
+</li>
+       
         </ul>
+        <div className='bradeley'>
+          <img src="src\images\Profile-Photo.svg" alt=""/>
+          Bradley Ortiz
+          <img src="src\images\Cle.svg" alt=""/>
+          @bradley_<img src="src\images\More-2.svg" alt=""/>
+        </div>
       </nav>
       
     );
