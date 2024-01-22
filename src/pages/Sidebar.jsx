@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 function Sidebar() {
     return (
       <nav className='sidebar' >
-        <ul>
+        <ul className='sidebar-ul'>
         <li><img src="src\images\Logo.svg" alt=""/></li>
         <Link className="homeTweeter" to="/"><li><img src={iconHome}/>Home</li></Link>
         <li><img src="src\images\Explore.svg" alt=""/>
@@ -40,9 +40,13 @@ More</li>
         </ul>
         <div className='bradeley'>
           <img src="src\images\Profile-Photo.svg" alt=""/>
-          Bradley Ortiz
-          <img src="src\images\Cle.svg" alt=""/>
-          @bradley_<img src="src\images\More-2.svg" alt=""/>
+          <div className='bradeleyO'> 
+            <div>Bradley Ortiz
+                 <img src="src\images\Cle.svg" alt=""/>
+            </div>
+             @bradley_
+          </div>
+          <img src="src\images\More-2.svg" alt=""/>
         </div>
       </nav>
       
