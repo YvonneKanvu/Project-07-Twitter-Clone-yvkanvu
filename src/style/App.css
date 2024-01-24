@@ -428,6 +428,44 @@ p{
 .aime:hover span {
     color: #ff0000;
 }
+.utilisateurProfil{
+    margin-top: 10px;
+    margin-left:80px;
+}
+.fleshReturn{
+    font-size: 50px;
+}
+.baniere{
+    height: 10rem;
+    background-image: url("src\images\Bitmap.png");
+}
+.utilisateurInfo{
+    margin-top: 7rem;
+}
+.utilisateurFollow{
+margin-top: 1rem;
+}
+.utilisateurActivity {
+    display: flex;
+    margin-top: 2rem;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.utilisateurButton{
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 120px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: #1D9BF0;
+    margin-left: 40rem;
+}
+.utilisateurImage{
+    border-radius: 300rem;
+    margin-top: 16rem;
+    margin-left: 10px;
+    height: 13rem;
+}
 
 
 
