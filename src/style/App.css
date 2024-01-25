@@ -430,14 +430,22 @@ p{
 }
 .utilisateurProfil{
     margin-top: 10px;
-    margin-left:80px;
+    display: flex;
 }
 .fleshReturn{
     font-size: 50px;
+    margin-right: 10rem;
 }
 .baniere{
+    height: 25rem;
+    background-image: url("src/images/splash imghome.png"); 
+    background-color: transparent;
+}
+.utilisateurImage{
+    border-radius: 300rem;
+    margin-top: 18rem;
+    margin-left: 10px;
     height: 10rem;
-    background-image: url("src\images\Bitmap.png");
 }
 .utilisateurInfo{
     margin-top: 7rem;
@@ -460,12 +468,7 @@ margin-top: 1rem;
     background-color: #1D9BF0;
     margin-left: 40rem;
 }
-.utilisateurImage{
-    border-radius: 300rem;
-    margin-top: 16rem;
-    margin-left: 10px;
-    height: 13rem;
-}
+
 
 
 
