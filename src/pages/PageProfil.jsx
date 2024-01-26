@@ -1,15 +1,21 @@
 import { Icon } from "@iconify/react";
+import {Link} from 'react-router-dom';
 
 function PageProfil() {
-    
+
         return (
              <div className="timeline">
               <div  className="utilisateurProfil">
-                 <Icon className="fleshReturn" icon="ph:arrow-left-bold" />
+               {/* <Link to="/">  */}
+        <a href="http://localhost:5173/">      
+        <Icon className="fleshReturn" icon="ph:arrow-left-bold" />
+        </a>
+
+               {/* </Link> */}
                  <h1>Yvonne Kanvu</h1>
               </div>
                 <div className="baniere"> 
-                  <img  src="src\images\Bitmap.png"className="utilisateurImage" alt="" />
+                  <img  src="src\images\Bitmap.png"className="utilisateurImage" alt="utilisateurImage" />
                 </div>
                 <button className="utilisateurButton">Editeur profil</button> 
                 <div className="utilisateurInfo">
@@ -34,5 +40,7 @@ function PageProfil() {
              </div>
          );
 }
+
+
 
 export default PageProfil;
