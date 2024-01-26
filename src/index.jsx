@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './components/layout';
 import Home from './pages/home';
 import PageProfil from './pages/PageProfil';
+import ProfilList from './data/ProfileList';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path:"/username",
         element:<PageProfil/>
+      }
+      ,
+      {
+        path:":id",
+        element:<ProfilList />
       }
     ]
   }

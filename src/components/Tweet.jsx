@@ -1,43 +1,45 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 export default function Tweet({ tweet }) {
   const [colorsComment, setColorsComment] = useState("");
   const [colorsRetweet, setColorsRetweet] = useState("");
   const [colorsLike, setColorsLike] = useState("");
-  const [countComment, setCountComment] = useState(2)
-  const [countRetweet, setCountRetweet] = useState(77)
-  const [countLike, setCountLike] = useState(45)
-  const [verified,setverified]= useState(false)
+  const [countComment, setCountComment] = useState(2);
+  const [countRetweet, setCountRetweet] = useState(77);
+  const [countLike, setCountLike] = useState(45);
+  const [verified, setverified] = useState(false);
 
   const handleClicComment = () => {
     setColorsComment("#0000ff");
-    if (verified == true){
-      setCountComment (countComment - 1);
-      }else{
-        setCountComment(countComment + 1);
-      };
-      setverified(!verified);
+    if (verified == true) {
+      setCountComment(countComment - 1);
+    } else {
+      setCountComment(countComment + 1);
+    }
+    setverified(!verified);
   };
   const handleClicRetweet = () => {
     setColorsRetweet("#00ff00");
-    if (verified == true){
-     setCountRetweet (countRetweet - 1);
-    }else{
-       setCountRetweet(countRetweet + 1);
-     };
-      setverified(!verified);
-   };
+    if (verified == true) {
+      setCountRetweet(countRetweet - 1);
+    } else {
+      setCountRetweet(countRetweet + 1);
+    }
+    setverified(!verified);
+  };
 
   const handleClicLike = () => {
     setColorsLike("#ff0000");
-    if (verified == true){
-      setCountLike (countLike - 1);
-     }else{
-        setCountLike(countLike + 1);
-      };
-       setverified(!verified);
+    if (verified == true) {
+      setCountLike(countLike - 1);
+    } else {
+      setCountLike(countLike + 1);
+    }
+    setverified(!verified);
   };
+  // console.log(tweet);
 
   return (
     <div className="tweet">
@@ -47,7 +49,9 @@ export default function Tweet({ tweet }) {
       <div className="tweet-content">
         <div className="tweet-body">
           <div className="tweet-title">
-            <span className="tweet-title-author">{tweet.tweetTitle}</span>
+            <Link to={`/${tweet.id}`}>
+              <span className="tweet-title-author">{tweet.tweetTitle}</span>
+            </Link>
             <span className="tweet-title-details">
               <img src={tweet.tweetAutentic} alt="" />
             </span>
@@ -68,7 +72,10 @@ export default function Tweet({ tweet }) {
             style={{ color: colorsComment }}
           >
             <span className="coment">
-              <Icon icon="basil:comment-solid" style={{ color: colorsComment }} />
+              <Icon
+                icon="basil:comment-solid"
+                style={{ color: colorsComment }}
+              />
             </span>
             {/* <img src="src/images/Reply.svg" alt="" /> */}
             <span>{countComment}</span>
@@ -79,9 +86,9 @@ export default function Tweet({ tweet }) {
             style={{ color: colorsRetweet }}
           >
             <span className="discut">
-            <Icon icon="ei:retweet" style={{ color: colorsRetweet }} />
+              <Icon icon="ei:retweet" style={{ color: colorsRetweet }} />
             </span>
-            <span>{countRetweet}</span> 
+            <span>{countRetweet}</span>
           </div>
           <div
             className="tweet-action aime"
@@ -89,10 +96,10 @@ export default function Tweet({ tweet }) {
             style={{ color: colorsLike }}
           >
             <span className="like">
-            <Icon icon="icon-park-solid:like" style={{ color: colorsLike }} />
+              <Icon icon="icon-park-solid:like" style={{ color: colorsLike }} />
             </span>
             {/* <img src="src\images\React.svg" alt="" /> */}
-           <span> {countLike}</span>
+            <span> {countLike}</span>
           </div>
           <div className="tweet-action">
             <img src="src\images\Tweet-Replies.svg" alt="" />
