@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useParams } from "react-router-dom";
-import DataSectionTweets from "./DataSectionTweets";
+import DataSectionTweets from "../Data.json";
 
 function ProfilList() {
     const {id} = useParams()

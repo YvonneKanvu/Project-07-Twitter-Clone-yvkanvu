@@ -45,7 +45,7 @@ export default function Tweet({ tweet }) {
     <div className="tweet">
       <div className="tweet-avatar">
           <Link to={`/${tweet.id}`}>
-        <img src={tweet.tweetIcon} alt="" />
+        <img src={tweet.tweetIcon} alt="tweetIcon" />
           </Link>
       </div>
       <div className="tweet-content">
@@ -63,7 +63,7 @@ export default function Tweet({ tweet }) {
           </div>
           <div className="tweet-text">{tweet.tweetInfo}</div>
             <div className="tweet-image">
-             <img src={tweet.tweetImage} alt="" />
+             <img src={""+tweet.tweetImage} alt="" />
             </div>
         </div>
 

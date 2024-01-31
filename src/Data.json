@@ -2,7 +2,7 @@
     [
         {
           "id": "1",
-          "tweetIcon": "profile",
+          "tweetIcon": "/images/Profile-Photo (1).png",
           "tweetTitle": "CNN",
           "tweetAutentic": "tweetAutentic",
           "tweetIdentite": "@CNN",
@@ -11,13 +11,13 @@
           "tweetInfo":"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
           "tweetImage": "",
           "tweetComment": "57",
-         " tweetDiscution": "144",
+          "tweetDiscution": "144",
           "tweetLike": "184"
         },
       
         {
           "id": "2",
-          "tweetIcon": "TweetProfile",
+          "tweetIcon": "/images/Tweet-Profile-Photo.png",
           "tweetTitle": "The New York Times",
           "tweetAutentic": "tweetAutentic",
           "tweetIdentite": "@nytimes",
@@ -25,7 +25,7 @@
           "tweetDate": "2h",
           "tweetInfo":
             "Gardening boomed during the pandemic. Six Black writers share how has helped them re-establish,and reimagine, a connection to cultivation and the land.",
-          "tweetImage": "tweetImage",
+          "tweetImage": "/images/tweet-image.png",
           "tweetComment": "19",
           "tweetDiscution": "48",
           "tweetLike": "482"
@@ -34,7 +34,7 @@
         {
           "id": "3",
       
-          "tweetIcon": "Tweeter",
+          "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
           "tweetAutentic": "tweetAutentic",
           "tweetIdentite": "@Twitter",
@@ -50,7 +50,7 @@
         {
           "id": "4",
       
-          "tweetIcon": "Tweeter",
+          "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
           "tweetAutentic": "tweetAutentic",
           "tweetIdentite": "@Twitter",
@@ -66,7 +66,7 @@
         {
           "id": "5",
       
-          "tweetIcon": "Tweeter",
+          "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
           "tweetAutentic": "tweetAutentic",
           "tweetIdentite": "@Twitter",
