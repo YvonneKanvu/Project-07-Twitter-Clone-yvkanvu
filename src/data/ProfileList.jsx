@@ -19,7 +19,7 @@ function ProfilList() {
         {/* </Link> */}
         <h1>{user.name}</h1>
       </div>
-      <div className="baniere">
+      <div className="baniereprofilList">
         <img
           src={user.tweetIcon}
           className="utilisateurImage"
@@ -37,12 +37,12 @@ function ProfilList() {
       <div className="utilisateurFollow">
         <p>{user.following} Following {user.followers} Followers</p>
       </div>
-      {user && (
+      {/* {user && ( */}
         <div className="userTweets">
-          <h4>{user.tweetTitle}</h4>
+          <h1>{user.tweetTitle}</h1>
           <p>{user.tweetBody}</p>
         </div>
-      )}
+      {/* )} */}
       
     </div>
   );

@@ -6,28 +6,28 @@ export default function Tweet({ tweet }) {
   const [colorsComment, setColorsComment] = useState("");
   const [colorsRetweet, setColorsRetweet] = useState("");
   const [colorsLike, setColorsLike] = useState("");
-  const [countComment, setCountComment] = useState(2);
-  const [countRetweet, setCountRetweet] = useState(77);
+  // const [countComment, setCountComment] = useState(2);
+  // const [countRetweet, setCountRetweet] = useState(77);
   const [countLike, setCountLike] = useState(45);
   const [verified, setverified] = useState(false);
 
   const handleClicComment = () => {
     setColorsComment("#0000ff");
-    if (verified == true) {
-      setCountComment(countComment - 1);
-    } else {
-      setCountComment(countComment + 1);
-    }
-    setverified(!verified);
+    // if (verified == true) {
+      // setCountComment(countComment - 1);
+    // } else {
+      // setCountComment(countComment + 1);
+    // }
+    // setverified(!verified);
   };
   const handleClicRetweet = () => {
     setColorsRetweet("#00ff00");
-    if (verified == true) {
-      setCountRetweet(countRetweet - 1);
-    } else {
-      setCountRetweet(countRetweet + 1);
-    }
-    setverified(!verified);
+  //   if (verified == true) {
+  //     setCountRetweet(countRetweet - 1);
+  //   } else {
+  //     setCountRetweet(countRetweet + 1);
+  //   }
+  //   setverified(!verified);
   };
 
   const handleClicLike = () => {
@@ -39,19 +39,21 @@ export default function Tweet({ tweet }) {
     }
     setverified(!verified);
   };
-  // console.log(tweet);
+  // <console.log(tweet);
 
   return (
     <div className="tweet">
       <div className="tweet-avatar">
+          <Link to={`/${tweet.id}`}>
         <img src={tweet.tweetIcon} alt="" />
+          </Link>
       </div>
       <div className="tweet-content">
         <div className="tweet-body">
           <div className="tweet-title">
-            <Link to={`/${tweet.id}`}>
-              <span className="tweet-title-author">{tweet.tweetTitle}</span>
-            </Link>
+            {/* <Link to={`/${tweet.id}`}> */}
+              <span className="tweet-title-author ">{tweet.tweetTitle}</span>
+            {/* </Link> */}
             <span className="tweet-title-details">
               <img src={tweet.tweetAutentic} alt="" />
             </span>
@@ -60,9 +62,9 @@ export default function Tweet({ tweet }) {
             <span className="tweet-title-details">{tweet.tweetDate}</span>
           </div>
           <div className="tweet-text">{tweet.tweetInfo}</div>
-          <div className="tweet-image">
-            <img src={tweet.tweetImage} alt="" />
-          </div>
+            <div className="tweet-image">
+             <img src={tweet.tweetImage} alt="" />
+            </div>
         </div>
 
         <div className="tweet-actions">
@@ -78,7 +80,7 @@ export default function Tweet({ tweet }) {
               />
             </span>
             {/* <img src="src/images/Reply.svg" alt="" /> */}
-            <span>{countComment}</span>
+            <span>{tweet.Comment}</span>
           </div>
           <div
             className="tweet-action discution"
@@ -88,7 +90,7 @@ export default function Tweet({ tweet }) {
             <span className="discut">
               <Icon icon="ei:retweet" style={{ color: colorsRetweet }} />
             </span>
-            <span>{countRetweet}</span>
+            <span>{tweet.Retweet}</span>
           </div>
           <div
             className="tweet-action aime"
