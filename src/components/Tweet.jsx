@@ -80,7 +80,7 @@ export default function Tweet({ tweet }) {
               />
             </span>
             {/* <img src="src/images/Reply.svg" alt="" /> */}
-            <span>{tweet.Comment}</span>
+            <span>{tweet.tweetComment}</span>
           </div>
           <div
             className="tweet-action discution"
@@ -90,7 +90,7 @@ export default function Tweet({ tweet }) {
             <span className="discut">
               <Icon icon="ei:retweet" style={{ color: colorsRetweet }} />
             </span>
-            <span>{tweet.Retweet}</span>
+            <span>{tweet.tweetDiscution}</span>
           </div>
           <div
             className="tweet-action aime"
