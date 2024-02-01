@@ -15,7 +15,7 @@ function PageProfil() {
                  <h1>Yvonne Kanvu</h1>
               </div>
                 <div className="baniere"> 
-                  <img  src="public\images\IMG-20230820-WA0035-1.jpg"className="utilisateurImage" alt="utilisateurImage" />
+                  <img  src="/images/IMG-20230820-WA0035-1.jpg"className="utilisateurImage" alt="utilisateurImage" />
                 </div>
                 <button className="utilisateurButton">Editeur profil</button> 
                 <div className="utilisateurInfo">

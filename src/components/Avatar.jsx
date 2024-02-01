@@ -2,7 +2,7 @@
 const Avatar = () => {
     return (
         <div className="avatar">
-           <img src="public\images\profile-photo.png" alt=""  />
+           <img src="/images/profile-photo.png" alt=""  />
         </div>  
         );
     }  

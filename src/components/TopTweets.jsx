@@ -1,7 +1,7 @@
 
 const TopTweets = () => {
     return (  
-        <img src="public\images\Vector.svg" alt="" className="top-tweets" />
+        <img src="/images/Vector.svg" alt="" className="top-tweets" />
     );
 }
  

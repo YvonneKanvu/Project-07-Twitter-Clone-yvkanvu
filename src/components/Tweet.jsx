@@ -62,9 +62,11 @@ export default function Tweet({ tweet }) {
             <span className="tweet-title-details">{tweet.tweetDate}</span>
           </div>
           <div className="tweet-text">{tweet.tweetInfo}</div>
+          {tweet.tweetImage && (
             <div className="tweet-image">
-             <img src={""+tweet.tweetImage} alt="" />
+             <img src={tweet.tweetImage} alt="" />
             </div>
+            )}
         </div>
 
         <div className="tweet-actions">

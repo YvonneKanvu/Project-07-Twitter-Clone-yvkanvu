@@ -1,16 +1,21 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Sidebar from '../pages/Sidebar';
-import Trends from '../pages/Trends';
+import React, { createContext, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Sidebar from "../pages/Sidebar";
+import Trends from "../pages/Trends";
+import data from '../Data.json'
 
-function Layout({children}) {
-    return (
-        <>
-            <Sidebar/>
-            <Outlet/>
-            <Trends />
-        </>
-    );
+export const UserContext = createContext();
+
+function Layout() {
+  const [tweet, setTweet] = useState(data);
+
+  return (
+    <UserContext.Provider value={{ tweet, setTweet }}>
+      <Sidebar />
+      <Outlet />
+      <Trends />
+    </UserContext.Provider>
+  );
 }
 
 export default Layout;

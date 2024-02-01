@@ -444,7 +444,7 @@ p{
 }
 .baniere{
     height: 25rem;
-    background-image: url("public/images/splash imghome.png"); 
+    background-image: url("/images/splash imghome.png"); 
     background-color: transparent;
 }
 .utilisateurImage{
