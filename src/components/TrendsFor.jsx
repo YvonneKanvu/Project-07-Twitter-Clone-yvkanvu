@@ -5,7 +5,7 @@ function TrendsFor() {
       <div className="trendsFor">
          <div className="setting">
             <h5>Trends for you</h5>
-            <img className="settingImage" src="src\images\Settings.svg" alt="" />
+            <img className="settingImage" src="/images/Settings.svg" alt="" />
          </div>
          <TurkeyTrends/>
          <TurkeyTrends/>
