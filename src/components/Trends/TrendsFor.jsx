@@ -1,4 +1,4 @@
-import TurkeyTrends from '../components/TurkeyTrends';
+import TurkeyTrends from './TurkeyTrends';
 function TrendsFor() {
    const trends = Array(4).fill(<TurkeyTrends />);
    return (

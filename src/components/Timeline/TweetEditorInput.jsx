@@ -8,7 +8,7 @@ const TweetEditorInput = () => {
     setTweetValue(value);
     console.log(value);
   }
-
+// console.log(dataLength)
   return (  
     <input 
       value={tweetValue} 

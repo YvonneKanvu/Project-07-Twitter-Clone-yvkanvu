@@ -1,8 +1,8 @@
 import { BrowserRouter,RouterProvider, Outlet,Routes,Route } from "react-router-dom";
 import Home from "./pages/home.jsx";
 import Layout from "./components/layout.jsx";
-import Sidebar from "./pages/Sidebar.jsx";
-import Trends from "./pages/Trends.jsx";
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import Trends from "./components/Trends/Trends.jsx";
 import PageProfil from "./pages/PageProfil.jsx";
 import { Children } from "react";
 // import Profile from "./components/Profile.jsx";

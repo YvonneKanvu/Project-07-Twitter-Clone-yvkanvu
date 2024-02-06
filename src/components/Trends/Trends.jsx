@@ -1,8 +1,8 @@
 import React from 'react';
-import TrendsSearch from '../components/TrendsSearch';
-import TrendsFor from '../components/TrendsFor';
-import TrendsFollow from '../components/TrendsFollow';
-import TrendsFooter from '../components/TrendsFooter';
+import TrendsSearch from './TrendsSearch';
+import TrendsFor from './TrendsFor';
+import TrendsFollow from './TrendsFollow';
+import TrendsFooter from './TrendsFooter';
 function Trends() {
     return (
       <main className='trends' >

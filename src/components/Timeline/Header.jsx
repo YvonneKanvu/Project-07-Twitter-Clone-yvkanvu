@@ -1,5 +1,5 @@
-import PageTitle from "../components/PageTitle";
-import TopTweets from "../components/TopTweets";
+import PageTitle from "./PageTitle";
+import TopTweets from "./TopTweets";
 
 const Header = () => {
     return ( 

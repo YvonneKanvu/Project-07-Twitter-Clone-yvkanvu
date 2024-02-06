@@ -1,7 +1,7 @@
 
     [
         {
-          "id": "1",
+          "id": 1,
           "tweetIcon": "/images/Profile-Photo (1).png",
           "tweetTitle": "CNN",
           "tweetAutentic": "tweetAutentic",
@@ -16,7 +16,7 @@
         },
       
         {
-          "id": "2",
+          "id": 2,
           "tweetIcon": "/images/Tweet-Profile-Photo.png",
           "tweetTitle": "The New York Times",
           "tweetAutentic": "tweetAutentic",
@@ -32,7 +32,7 @@
         },
       
         {
-          "id": "3",
+          "id": 3,
       
           "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
@@ -48,7 +48,7 @@
         },
       
         {
-          "id": "4",
+          "id": 4,
           "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
           "tweetAutentic": "tweetAutentic",
@@ -63,7 +63,7 @@
         },
       
         {
-          "id": "5",
+          "id": 5,
           "tweetIcon": "/images/Tweeter.svg",
           "tweetTitle": "Twitter",
           "tweetAutentic": "tweetAutentic",
