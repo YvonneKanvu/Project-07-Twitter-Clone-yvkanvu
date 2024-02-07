@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-const TweetEditorInput = () => {
+const TweetEditorInput = ({handleChange}) => {
   const [tweetValue, setTweetValue] = useState('');
 
-  function handleChange(e) {
+  function handleInputChange(e) {
     const value = e.target.value;
     setTweetValue(value);
-    console.log(value);
+    handleChange(value);
   }
 // console.log(dataLength)
   return (  
     <input 
       value={tweetValue} 
-      onChange={handleChange} 
+      onChange={handleInputChange} 
       placeholder="What's happening?" 
       className="tweet-editor-input"
     />

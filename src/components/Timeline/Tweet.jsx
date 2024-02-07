@@ -81,7 +81,7 @@ export default function Tweet({ tweet }) {
                 style={{ color: colorsComment }}
               />
             </span>
-            {/* <img src="src/images/Reply.svg" alt="" /> */}
+          
             <span>{tweet.tweetComment}</span>
           </div>
           <div
@@ -106,7 +106,7 @@ export default function Tweet({ tweet }) {
             <span> {countLike}</span>
           </div>
           <div className="tweet-action">
-            <img src="src\images\Tweet-Replies.svg" alt="" />
+            <img src="/images/Tweet-Replies.svg" alt="" />
           </div>
         </div>
       </div>

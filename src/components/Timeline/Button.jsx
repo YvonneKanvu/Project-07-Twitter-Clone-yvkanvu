@@ -1,6 +1,6 @@
 const Button = () => {
     return ( 
-        <button  className="button">Tweet</button>
+        <button className="button">Tweet</button>
      );
 }
  

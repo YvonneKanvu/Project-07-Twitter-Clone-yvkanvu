@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import TweetEditorInput from "./TweetEditorInput";
 import TweetEditorButtons from "./TweetEditorButtons";
 import Tweets from './Tweets';
-import DataSectionTweets from "../../Data.json";
+import { TweetsContext } from '../layout';
+
+// import DataSectionTweets from "./Data.json";
+
 
 const TweetEditorForm = () => {
-    const [tweetValue, setTweetValue] = useState([]);
-    const [tweets, setTweets] = useState([]);
-
+    const [tweetValue, setTweetValue] = useState('');
+    // const [tweets, setTweets] = useState([]);
+    const tweetsContext = useContext(DataSectionTweets);
     const handleChange = (value) => {
     setTweetValue(value);
              }
-    const handleSubmit = () =>{
-    const dataLength= DataSectionTweets.length
+             console.log(tweetsContext);
+    const handleSubmit = (event) =>{
+    event.preventDefault();
+      const dataLength= tweetsContext.length;
+      console.log(tweetsContext)
     const newTweet =  {
      "id": dataLength+1,
      "tweetIcon": "/images/Tweet-Profile-Photo.png",
@@ -27,17 +33,16 @@ const TweetEditorForm = () => {
      "tweetDiscution": "48",
      "tweetLike": "482"
      }
-      DataSectionTweets.push(newTweet)
+      tweetsContext.push(newTweet);
         // tweetValue.unshift(newTweet)
         
     }
 
     return ( 
            <form className="tweet-editor-form" onSubmit={handleSubmit} >
-      <TweetEditorInput handleChange={handleChange} tweetValue={tweetValue} /> 
-  <TweetEditorButtons tweetValue={tweetValue}/>
+      <TweetEditorInput handleChange={handleChange} /> 
+  <TweetEditorButtons  tweetValue={tweetValue}/>
     {/* <button type="submit">Tweet</button>   */}
-
      </form>
     );
     }

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Header from '../components/Timeline/Header';
 import TweetEditor from '../components/Timeline/TweetEditor';
 import Tweets from '../components/Timeline/Tweets';
-import { UserContext } from '../components/layout';
+import { TweetsContext } from '../components/layout';
 
 
 

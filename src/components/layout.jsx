@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Trends from "./Trends/Trends";
 import data from '../Data.json'
 
-export const UserContext = createContext();
+export const TweetsContext = createContext(null);
 
 function Layout() {
   const [tweet, setTweet] = useState(data);
@@ -12,11 +12,11 @@ function Layout() {
 
 
   return (
-    <UserContext.Provider value={{ tweet, setTweet, tweetValue, setTweetValue }}>
+    <TweetsContext.Provider value={{ tweet, setTweet, tweetValue, setTweetValue }}>
       <Sidebar />
       <Outlet />
       <Trends />
-    </UserContext.Provider>
+    </TweetsContext.Provider>
   );
 }
 
