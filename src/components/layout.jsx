@@ -7,12 +7,13 @@ import data from '../Data.json'
 export const TweetsContext = createContext(null);
 
 function Layout() {
-  const [tweet, setTweet] = useState(data);
+  const [tweets, setTweets] = useState(data.tweets);
+  const [currentUser, setCurrentUser] = useState(data.currentUser);
   const [tweetValue, setTweetValue] = useState('');
 
 
   return (
-    <TweetsContext.Provider value={{ tweet, setTweet, tweetValue, setTweetValue }}>
+    <TweetsContext.Provider value={{ currentUser, tweets, setTweets, tweetValue, setTweetValue }}>
       <Sidebar />
       <Outlet />
       <Trends />

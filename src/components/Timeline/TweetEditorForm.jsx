@@ -1,50 +1,44 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState } from "react";
 import TweetEditorInput from "./TweetEditorInput";
 import TweetEditorButtons from "./TweetEditorButtons";
-import Tweets from './Tweets';
-import { TweetsContext } from '../layout';
-
-// import DataSectionTweets from "./Data.json";
-
+import Tweets from "./Tweets";
+import DataSectionTweets from "../../Data.json";
+import { TweetsContext } from "../layout";
 
 const TweetEditorForm = () => {
-    const [tweetValue, setTweetValue] = useState('');
-    // const [tweets, setTweets] = useState([]);
-    const tweetsContext = useContext(DataSectionTweets);
-    const handleChange = (value) => {
+  // const TweetsContext = useContext(TweetsContext);
+  const { tweets, currentUser: user, setTweets, tweetValue, setTweetValue } =
+    useContext(TweetsContext);
+  const handleChange = (value) => {
     setTweetValue(value);
-             }
-             console.log(tweetsContext);
-    const handleSubmit = (event) =>{
+  };
+  const handleSubmit = (event) => {
     event.preventDefault();
-      const dataLength= tweetsContext.length;
-      console.log(tweetsContext)
-    const newTweet =  {
-     "id": dataLength+1,
-     "tweetIcon": "/images/Tweet-Profile-Photo.png",
-    "tweetTitle": "The New York Times",
-    "tweetAutentic": "tweetAutentic",
-     "tweetIdentite": "@nytimes",
-     "tweetPoint": ".",
-     "tweetDate": "2h",
-     "tweetInfo":tweetValue,
-    "tweetImage": "/images/tweet-image.png",
-    "tweetComment": "19",
-     "tweetDiscution": "48",
-     "tweetLike": "482"
-     }
-      tweetsContext.push(newTweet);
-        // tweetValue.unshift(newTweet)
-        
-    }
+    const dataLength = DataSectionTweets.length;
+    const newTweet = {
+      id: dataLength + 1,
+      tweetIcon: user.profilePicture,
+      tweetTitle: user.username,
+      tweetAutentic: user.isVerified,
+      tweetIdentite: user.handle,
+      tweetPoint: ".",
+      tweetDate: "now",
+      tweetInfo: tweetValue,
+      tweetComment: "0",
+      tweetDiscution: "0",
+      tweetLike: "0",
+    };
+    setTweets([newTweet, ...tweets]);
+    setTweetValue("");
+  };
 
-    return ( 
-           <form className="tweet-editor-form" onSubmit={handleSubmit} >
-      <TweetEditorInput handleChange={handleChange} /> 
-  <TweetEditorButtons  tweetValue={tweetValue}/>
-    {/* <button type="submit">Tweet</button>   */}
-     </form>
-    );
-    }
- 
+  return (
+    <form className="tweet-editor-form" onSubmit={handleSubmit}>
+      <TweetEditorInput handleChange={handleChange} />
+      <TweetEditorButtons type="submit" tweetValue={tweetValue} />
+      {/* <button type="submit">Tweet</button> Bouton de soumission */}
+    </form>
+  );
+};
+
 export default TweetEditorForm;

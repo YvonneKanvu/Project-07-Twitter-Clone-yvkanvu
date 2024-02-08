@@ -14,20 +14,20 @@ export default function Tweet({ tweet }) {
   const handleClicComment = () => {
     setColorsComment("#0000ff");
     // if (verified == true) {
-      // setCountComment(countComment - 1);
+    // setCountComment(countComment - 1);
     // } else {
-      // setCountComment(countComment + 1);
+    // setCountComment(countComment + 1);
     // }
     // setverified(!verified);
   };
   const handleClicRetweet = () => {
     setColorsRetweet("#00ff00");
-  //   if (verified == true) {
-  //     setCountRetweet(countRetweet - 1);
-  //   } else {
-  //     setCountRetweet(countRetweet + 1);
-  //   }
-  //   setverified(!verified);
+    //   if (verified == true) {
+    //     setCountRetweet(countRetweet - 1);
+    //   } else {
+    //     setCountRetweet(countRetweet + 1);
+    //   }
+    //   setverified(!verified);
   };
 
   const handleClicLike = () => {
@@ -44,15 +44,15 @@ export default function Tweet({ tweet }) {
   return (
     <div className="tweet">
       <div className="tweet-avatar">
-          <Link to={`/${tweet.id}`}>
-        <img src={tweet.tweetIcon} alt="tweetIcon" />
-          </Link>
+        <Link to={`/${tweet.id}`}>
+          <img src={tweet.tweetIcon} alt="tweetIcon" />
+        </Link>
       </div>
       <div className="tweet-content">
         <div className="tweet-body">
           <div className="tweet-title">
             {/* <Link to={`/${tweet.id}`}> */}
-              <span className="tweet-title-author ">{tweet.tweetTitle}</span>
+            <span className="tweet-title-author ">{tweet.tweetTitle}</span>
             {/* </Link> */}
             <span className="tweet-title-details">
               <img src={tweet.tweetAutentic} alt="" />
@@ -64,9 +64,9 @@ export default function Tweet({ tweet }) {
           <div className="tweet-text">{tweet.tweetInfo}</div>
           {tweet.tweetImage && (
             <div className="tweet-image">
-             <img src={tweet.tweetImage} alt="" />
+              <img src={tweet.tweetImage} alt="" />
             </div>
-            )}
+          )}
         </div>
 
         <div className="tweet-actions">
@@ -81,7 +81,7 @@ export default function Tweet({ tweet }) {
                 style={{ color: colorsComment }}
               />
             </span>
-          
+
             <span>{tweet.tweetComment}</span>
           </div>
           <div
