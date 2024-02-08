@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import DataSectionTweets from "../Data.json";
 
 function ProfilList() {
-    const {id} = useParams()
-
-    const user = DataSectionTweets.find((e)=> e.id == id)
-    console.log(DataSectionTweets[0])
+  const { id } = useParams();
+  console.log(DataSectionTweets);
+  const user = DataSectionTweets.tweets.find((e) => e.id == id);
+  console.log(DataSectionTweets[0]);
 
   return (
     <div className="timeline">
@@ -35,15 +35,16 @@ function ProfilList() {
         </span>
       </div>
       <div className="utilisateurFollow">
-        <p>{user.following} Following {user.followers} Followers</p>
+        <p>
+          {user.following} Following {user.followers} Followers
+        </p>
       </div>
       {/* {user && ( */}
-        <div className="userTweets">
-          <h1>{user.tweetTitle}</h1>
-          <p>{user.tweetBody}</p>
-        </div>
+      <div className="userTweets">
+        <h1>{user.tweetTitle}</h1>
+        <p>{user.tweetBody}</p>
+      </div>
       {/* )} */}
-      
     </div>
   );
 }

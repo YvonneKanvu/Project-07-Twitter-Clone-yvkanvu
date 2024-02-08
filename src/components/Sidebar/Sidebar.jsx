@@ -39,12 +39,13 @@ More</li>
        
         </ul>
         <div className='bradeley'>
-          <img src="/images/Profile-Photo.svg" alt=""/>
+          <img className='myProfileImage'src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LumumbaBruxelles1960.jpg/250px-LumumbaBruxelles1960.jpg"
+ alt=""/>
           <div className='bradeleyO'> 
-            <div>Bradley Ortiz
+            <div>Yvonne Kanvu
                  <img src="/images/Cle.svg" alt=""/>
             </div>
-             @bradley_
+             @yvonnek_
           </div>
           <img src="/images/More-2.svg" alt=""/>
         </div>

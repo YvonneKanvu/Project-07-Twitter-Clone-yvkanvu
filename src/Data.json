@@ -1,8 +1,8 @@
 {
   "currentUser": {
     "profilePicture": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LumumbaBruxelles1960.jpg/250px-LumumbaBruxelles1960.jpg",
-    "isVerified": true,
-    "handle": "yvonnek"
+    "isVerified": "true",
+    "handle": "@yvonnek"
   },
   "tweets": [
     {

@@ -251,6 +251,12 @@ body{
 .bradeleyO{
     display: block;
 }
+.myProfileImage{
+    max-width: 100%;
+    max-height: 80px;
+    border-radius: 100%;
+
+}
 .trends {
     flex: 0 0 17.16%;
     font-family: 'Inter',sans-serif;
@@ -448,11 +454,11 @@ p{
     background-color: transparent;
 }
 .utilisateurImage{
-    border-radius: 1000rem;
     margin-top: 18rem;
     margin-left: 10px;
-    height: 10rem;
-    width: 10rem;
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 100%;
 }
 .utilisateurInfo{
     margin-top: 7rem;
