@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const TweetEditorInput = ({handleChange}) => {
   const [tweetValue, setTweetValue] = useState('');
 
@@ -8,8 +7,13 @@ const TweetEditorInput = ({handleChange}) => {
     setTweetValue(value);
     handleChange(value);
   }
-// console.log(dataLength)
-  return (  
+  // type="text"
+  // {...register("name", { required: true, pattern: /^[A-Za-z]{3,180}$/i })}
+  // <form className="tweet-editor-form" onSubmit={handleSubmit(onSubmitForm)}>
+
+
+  return ( 
+   
     <input 
       value={tweetValue} 
       onChange={handleInputChange} 

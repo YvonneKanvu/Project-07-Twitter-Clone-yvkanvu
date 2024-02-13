@@ -4,7 +4,7 @@ function TrendsFollow() {
     <div className="trendsFollow">
       <h5>Who to follow</h5>
       <div className="followNewyork">
-        <Link to={"http://localhost:5173/2"}>
+        <Link to={"http://localhost:5173/The%20New%20York%20Times"}>
           <img src="/images/Tweet-Profile-Photo.png" alt="" />
         </Link>
         <div className="followNewyorkDetail">
@@ -14,12 +14,12 @@ function TrendsFollow() {
           </div>
           <span>@mytimes</span>
         </div>
-        <Link to={"http://localhost:5173/2"}>
+        <Link to={"http://localhost:5173/The%20New%20York%20Times"}>
           <button className="newYorkButton">Follow</button>
         </Link>
       </div>
       <div className="followCNN">
-        <Link to={"http://localhost:5173/1"}>
+        <Link to={"http://localhost:5173/CNN"}>
           <img src="/images/Profile-Photo (1).png" alt="" />
         </Link>
 
@@ -30,12 +30,12 @@ function TrendsFollow() {
           </div>
           <span>@CNN</span>
         </div>
-        <Link to={"http://localhost:5173/1"}>
+        <Link to={"http://localhost:5173/CNN"}>
           <button className="cnnButton">Follow</button>
         </Link>
       </div>
       <div className="followTwitter">
-        <Link to={"http://localhost:5173/3"}>
+        <Link to={"http://localhost:5173/Twitter"}>
           <img src="/images/Tweeter.svg" alt="" />
         </Link>
 
@@ -46,7 +46,7 @@ function TrendsFollow() {
           </div>
           <span>@Twitter</span>
         </div>
-        <Link to={"http://localhost:5173/3"}>
+        <Link to={"http://localhost:5173/Twitter"}>
           <button className="twitterButton">Follow</button>
         </Link>
       </div>

@@ -15,31 +15,31 @@ body{
 }
 
 .timeline {
-    flex: 0 0 800px;
+     flex: 0 0 800px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
-    margin-left: 20rem;
+    margin-left: 20rem; 
     
 }
 
-.header {
+ .header {
     padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #2F3336;
-}
+    border-bottom: 1px solid #2F3336; 
+}  
 
 .top-tweets {
-    width: 1.5rem;
+     width: 1.5rem;
     height: auto;
-}
+}   
 
 .page-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+     font-size: 1.5rem;
+    font-weight: bold; 
+}  
 
 .tweet-editor {
     display: flex;
@@ -52,7 +52,7 @@ body{
 
 .avatar {
     flex: 0 0 70px;
-    /*padding: 0 rem;*/
+    padding: 0 rem;
 
 }
 
@@ -89,7 +89,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*padding: 0.8rem 0;*/
+    padding: 0.8rem 0;
     gap: 1rem;
 }
 .tweet-editor-actions button {
@@ -112,11 +112,11 @@ body{
     gap: 20px;
     padding: 1.5rem 1rem;
     border-bottom: 1px solid #2F3336;
-}
+} 
 
 .tweet-avatar {
-    /*height: 70px;*/
-    /*width: 70px;*/
+    height: 70px;
+    width: 70px;
     flex: 0 0 70px;
 }
 

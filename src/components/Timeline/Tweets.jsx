@@ -7,9 +7,6 @@ import { TweetsContext } from "../layout";
 const Tweets = () => {
   const [colors, setColors] = useState(["#0000ff", "#00ff00", "#ff0000"]);
   const { tweets } = useContext(TweetsContext);
-  //   function handleTweetSubmit(tweet) {
-//     setTweets([...tweets, tweet]);
-//   }
 
   return (
     <>

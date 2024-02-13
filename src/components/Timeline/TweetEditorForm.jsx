@@ -4,16 +4,33 @@ import TweetEditorButtons from "./TweetEditorButtons";
 import Tweets from "./Tweets";
 import DataSectionTweets from "../../Data.json";
 import { TweetsContext } from "../layout";
+import { useForm } from "react-hook-form";
 
 const TweetEditorForm = () => {
-  // const TweetsContext = useContext(TweetsContext);
-  const { tweets, currentUser: user, setTweets, tweetValue, setTweetValue } =
-    useContext(TweetsContext);
+  const {
+    register,
+    formState: { errors },
+  } = useForm();
+  const {
+    tweets,
+    currentUser: user,
+    setTweets,
+    tweetValue,
+    setTweetValue,
+  } = useContext(TweetsContext);
+  // const handleChange = (value) => {
+  //   setTweetValue(value);
+  // };
+  const onSubmitForm = (data) => {
+    console.log(data);
+    alert(`${data.name} tweet ajouté `);
+  };
+
   const handleChange = (value) => {
-    setTweetValue(value);
+  setTweetValue(value);
   };
   const handleSubmit = (event) => {
-    event.preventDefault();
+  event.preventDefault();
     const dataLength = DataSectionTweets.length;
     const newTweet = {
       id: dataLength + 1,
@@ -33,12 +50,22 @@ const TweetEditorForm = () => {
   };
 
   return (
+    
     <form className="tweet-editor-form" onSubmit={handleSubmit}>
-      <TweetEditorInput handleChange={handleChange} />
+      <TweetEditorInput handleChange={handleChange}  />
       <TweetEditorButtons type="submit" tweetValue={tweetValue} />
       {/* <button type="submit">Tweet</button> Bouton de soumission */}
+      {/* {errors.name && errors.name.type === "required" && ( */}
+        {/* <span>Ce champ est obligatoire</span> */}
+      {/* )} */}
+      {/* {errors.name && errors.name.type === "pattern" && ( */}
+        {/* <span> */}
+          {/* Le tweet ne doit pas dépasser 180 caractères et doit commencer par une */}
+          {/* lettre */}
+        {/* </span> */}
+      {/* )} */}
     </form>
   );
-};
+}
 
 export default TweetEditorForm;

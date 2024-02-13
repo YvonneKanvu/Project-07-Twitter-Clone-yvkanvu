@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <PageProfil />,
       },
       {
-        path: ":id",
+        path: "/:users",
         element: <ProfilList />,
       },
     ],

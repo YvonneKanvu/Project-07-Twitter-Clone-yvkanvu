@@ -4,6 +4,7 @@ import TopTweets from "./TopTweets";
 const Header = () => {
     return ( 
         <div className="header">
+        
             <PageTitle/>
             <TopTweets/>
         </div>

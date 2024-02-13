@@ -2,7 +2,8 @@
   "currentUser": {
     "profilePicture": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LumumbaBruxelles1960.jpg/250px-LumumbaBruxelles1960.jpg",
     "isVerified": "true",
-    "handle": "@yvonnek"
+    "handle": "@yvonnek",
+    "Date":"September"
   },
   "tweets": [
     {
@@ -58,7 +59,7 @@
       "tweetAutentic": "tweetAutentic",
       "tweetIdentite": "@Twitter",
       "tweetPoint": ".",
-      "tweetDate": "oct 4",
+      "tweetDate": "7m",
       "tweetInfo": "hello literally everyone.",
       "tweetImage": "",
       "tweetComment": "118.7k",
@@ -79,6 +80,37 @@
       "tweetComment": "",
       "tweetDiscution": "",
       "tweetLike": ""
+    }
+  ],
+
+  "profiles" : [
+    {
+      "tweetIcon": "/images/Profile-Photo (1).png",
+      "tweetTitle" : "CNN",
+      "tweetAutentic": "tweetAutentic",
+      "tweetIdentite" : "@cnn",
+      "tweetDate": "7m",
+      "following" : "200",
+      "followers" : "523"
+    },
+    {
+      "tweetIcon": "/images/Tweet-Profile-Photo.png",
+      "tweetTitle": "The New York Times",
+      "tweetAutentic": "tweetAutentic",
+      "tweetIdentite": "@nytimes",
+      "tweetDate": "2h",
+      "following":"45",
+      "followers":"635"
+
+    },
+    {
+      "tweetIcon": "/images/Tweeter.svg",
+      "tweetTitle": "Twitter",
+      "tweetAutentic": "tweetAutentic",
+      "tweetIdentite": "@Twitter",
+      "tweetDate": "oct 4",
+      "following":"122",
+      "followers":"762"
     }
   ]
 }

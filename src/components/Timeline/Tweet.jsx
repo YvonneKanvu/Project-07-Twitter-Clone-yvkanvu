@@ -1,16 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { TweetsContext } from "../layout";
 
 export default function Tweet({ tweet }) {
   const [colorsComment, setColorsComment] = useState("");
   const [colorsRetweet, setColorsRetweet] = useState("");
   const [colorsLike, setColorsLike] = useState("");
+  const {newTweet} = useContext(TweetsContext);
   // const [countComment, setCountComment] = useState(2);
   // const [countRetweet, setCountRetweet] = useState(77);
   const [countLike, setCountLike] = useState(45);
   const [verified, setverified] = useState(false);
-
+console.log(newTweet);
   const handleClicComment = () => {
     setColorsComment("#0000ff");
     // if (verified == true) {
@@ -42,9 +44,9 @@ export default function Tweet({ tweet }) {
   // <console.log(tweet);
 
   return (
-    <div className="tweet">
+    <div className="tweet flex justify-start items-start gap-20 p-6 border-b border-gray-700">
       <div className="tweet-avatar">
-        <Link to={`/${tweet.id}`}>
+        <Link to={`/${tweet.tweetTitle}`}>
           <img src={tweet.tweetIcon} alt="tweetIcon" />
         </Link>
       </div>

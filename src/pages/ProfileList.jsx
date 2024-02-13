@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import { useParams } from "react-router-dom";
 import DataSectionTweets from "../Data.json";
+import Tweets from "../components/Timeline/Tweets";
 
 function ProfilList() {
-  const { id } = useParams();
-  console.log(DataSectionTweets);
-  const user = DataSectionTweets.tweets.find((e) => e.id == id);
-  console.log(DataSectionTweets[0]);
+  const { users } = useParams();
+
+  const user = DataSectionTweets.profiles.find((e) => e.tweetTitle === users);
+  console.log(user);
 
   return (
     <div className="timeline">
@@ -17,7 +18,7 @@ function ProfilList() {
         </a>
 
         {/* </Link> */}
-        <h1>{user.name}</h1>
+        <h1>{user.tweetTitle}</h1>
       </div>
       <div className="baniereprofilList">
         <img
@@ -28,10 +29,11 @@ function ProfilList() {
       </div>
       <button className="utilisateurButton">Editeur profil</button>
       <div className="utilisateurInfo">
-        <h1>{user.name}</h1>
-        <span>@{user.username}</span>
+        <h1>{user.tweetTitle}</h1>
+        <span>{user.tweetIdentite}</span>
+       <img src= {user.tweetAutentic} className="utilisateurVerified" alt="utilisateurVerified"/>
         <span>
-          <Icon icon="uiw:date" /> joined {user.joinDate}
+          <Icon icon="uiw:date" /> joined {user.tweetDate}
         </span>
       </div>
       <div className="utilisateurFollow">
@@ -39,12 +41,6 @@ function ProfilList() {
           {user.following} Following {user.followers} Followers
         </p>
       </div>
-      {/* {user && ( */}
-      <div className="userTweets">
-        <h1>{user.tweetTitle}</h1>
-        <p>{user.tweetBody}</p>
-      </div>
-      {/* )} */}
     </div>
   );
 }
