@@ -2,12 +2,16 @@ import { Icon } from "@iconify/react";
 import { useParams } from "react-router-dom";
 import DataSectionTweets from "../Data.json";
 import Tweets from "../components/Timeline/Tweets";
+import Tweet from "../components/Timeline/Tweet";
 
 function ProfilList() {
   const { users } = useParams();
 
   const user = DataSectionTweets.profiles.find((e) => e.tweetTitle === users);
-  console.log(user);
+  const tweetsUtilisateur = DataSectionTweets.tweets.filter(
+    (tweet) => tweet.tweetTitle === users
+  );
+  console.log(tweetsUtilisateur);
 
   return (
     <div className="timeline">
@@ -40,6 +44,13 @@ function ProfilList() {
         <p>
           {user.following} Following {user.followers} Followers
         </p>
+         <div className="tweetsUtilisateur">
+        <h2> {user.tweetTitle}</h2>
+        {tweetsUtilisateur.map((tweet, index) => (
+        <Tweet tweet={tweet} key={index} />
+      ))}
+     
+        </div>
       </div>
     </div>
   );
